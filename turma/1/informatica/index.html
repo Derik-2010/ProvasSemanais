@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../css/styles.css">
+  </head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <!-- Navegação --><div class="d-flex justify-content-between align-items-center">
+  <!-- Menu -->
+  <ul class="nav nav-underline">
+    <li class="nav-item"><a class="nav-link border border-danger border-4 border-buttomtext-danger" href="index.html">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="./provas/liguagens.html">Linguagens</a></li>
+    <li class="nav-item"><a class="nav-link" href="./provas/matematticaETecnologia.html">Matemática e suas Tecnologias</a></li>
+    <li class="nav-item"><a class="nav-link" href="./provas/cienciaNatureza.html">Ciências da Natureza</a></li>
+    <li class="nav-item"><a class="nav-link" href="./provas/cienciasHumanas.html">Ciências Humanas</a></li>
+    <li class="nav-item"><a class="nav-link" href="./pajeDesenvolvimento1.html">Ajuda</a></li>
+    <li class="nav-item"><a class="nav-link" href="./pajeDesenvolvimento.html">Configurações</a></li>
+  </ul>
+
+  <!-- Botão "Sair" fora do <ul>, alinhado à direita -->
+    
+    <a href="../../../index.html" class="btn btn-danger btn-sm ms-auto   bg-danger text-light">Sair</a>
+</div>
+
+
+        <!-- Título e descrição -->
+        <section>
+          <h4 class="display-4 mt-4">Escola Estadual Clotilde Onofri de Campos</h4>
+          <p class="lead">Sistema de Provas - Bimestrais e Simulados</p>
+
+          <div class="mt-4">
+            <p>
+              Bem-vindo ao Sistema de Provas da Escola Estadual Clotilde Onofri de Campos.<br>
+              Este ambiente foi desenvolvido para proporcionar uma aplicação de avaliações de forma simples, segura e organizada.<br>
+              Selecione o tipo de prova que você irá realizar e certifique-se de que seu nome completo e sua turma estejam corretos.<br>
+            </p>
+            <p class="fw-bold lead"><strong>Desejamos uma excelente avaliação e bom desempenho!</strong></p>
+          </div>
+          <div class="mt-4">
+       
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <div id="footer" class="border-buttom">
+            <span id="horaAtual" class="text-danger fw-bold text-center "><strong></span>
+          </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="Script/informatica.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+          integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+        <script>
+          // Relógio
+          function atualizarRelogio() {
+            const agora = new Date();
+            const hora = agora.toLocaleTimeString();
+            document.getElementById("horaAtual").textContent = hora;
+          }
+          setInterval(atualizarRelogio, 1000);
+          atualizarRelogio();
+
+          // Nome do aluno
+          ;
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
