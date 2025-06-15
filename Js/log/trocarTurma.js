@@ -40,46 +40,49 @@ function salvarDados() {
   //! 1° INFORMÁTICA
   if (ano === "1" && turma === "1 - Informática") {	
 
-    window.location.href = "../../turma/1/informatica/index.html"; //!  redireciona para o índex da turma
+    window.location.href = "turma/1/informatica/index.html"; //!  redireciona para o índex da turma
 
   }
 //! 1° LOGISTICA
   
   else if (ano === "1" && turma === "1 - Logistica") {
 
-    window.location.href = "../../turma/1/logisitica/index.html"; //! redireciona para o  índex da turma
+    window.location.href = "turma/1/logisitica/index.html"; //! redireciona para o  índex da turma
   }
   
 //! 2° INFORMÁTICA
   else if (ano === "2" && turma === "2 - Informática") {
 
-    window.location.href = "../../turma/2/informatica/index.html"; //! redireciona para o  índex da turma
+    window.location.href = "turma/2/informatica/index.html"; //! redireciona para o  índex da turma
   }
 //! 2° PROPEDEUTICO
   
   else if (ano === "2" && turma === "2 - Propedeutico") {
 
-    window.location.href = "../../turma/2/propedeutico/index.html"; //! redireciona para o  índex da turma
+    window.location.href = "turma/2/propedeutico/index.html"; //! redireciona para o  índex da turma
   }
 //! 3° INFORMÁTICA
   
   else if (ano === "3" && turma === "3 - Informática 1") {
 
-    window.location.href = "../../turma/3/informatica1/index.html"; //! redireciona para o  índex da turma
+    window.location.href = "turma/3/informatica1/index.html"; //! redireciona para o  índex da turma
   }
   
 //! 3° INFORMÁTICA
   else if (ano === "3" && turma === "3 - Informática 2") {
 
-    window.location.href = "../../turma/3/informatica2/index.html"; //! redireciona para o  índex da turma
+    window.location.href = "turma/3/informatica2/index.html"; //! redireciona para o  índex da turma
 
   }
   
 //! 3° PROPEDEUTICO
   else if (ano === "3" && turma === "3 -Propedeutico") {
 
-    window.location.href = "../../turma/3/propedeutico/index.html"; //! redireciona para o  índex da turma 
+    window.location.href = "turma/3/propedeutico/index.html"; //! redireciona para o  índex da turma 
   }  }
+
+  //? A ultima atualização foi feita em 15/06/2025 - 11:11 - Derik
+  // todo: Com esse alteração o sistema pode ser redirecionado, quando ele é aberto no gerenciador de Arquivos.
 
 
 

@@ -1,71 +1,111 @@
-<!doctype html>
-<html lang="pt-br">
+<!doctype html> 
+<html lang="pt-br" class="h-100">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuração</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../../../img/favicon/faciconVermelha.png" type="image/x-icon">
+    
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .erro-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .erro-container h1 {
+        font-size: 6rem;
+      }
+      .social-icons {
+        position: relative;
+      }
+      .social-icons a {
+        position: relative;
+        margin: 0 10px;
+        font-size: 1.8rem;
+        color: #dc3545;
+        text-decoration: none;
+      }
+      .social-icons a:hover {
+        color: #a71d2a;
+      }
 
- <link rel="stylesheet" href="../../../css/styles.css">
-     <title>Configurações</title>
+      /* Nome flutuante */
+      .social-icons a::after {
+        content: attr(data-nome);
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #dc3545;
+        color: white;
+        font-size: 0.75rem;
+        padding: 3px 8px;
+        border-radius: 10px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.3s ease, bottom 0.3s ease;
+        pointer-events: none;
+      }
 
-   
+      .social-icons a:hover::after {
+        opacity: 1;
+        bottom: -35px;
+      }
+    </style>
   </head>
   <body>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-         
-          <!-- Navegação -->
-          <ul class="nav nav-underline">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="./provas/liguagens.html">Linguagens</a></li>
-            <li class="nav-item"><a class="nav-link" href="./provas/matematticaETecnologia.html">Matemática e suas Tecnologias</a></li>
-            <li class="nav-item"><a class="nav-link" href="./provas/cienciaNatureza.html">Ciências da Natureza</a></li>
-            <li class="nav-item"><a class="nav-link" href="./provas/cienciasHumanas.html">Ciências Humanas</a></li>
-            <li class="nav-item"><a class="nav-link  " href="./pajeDesenvolvimento1.html">Ajuda</a></li>
-            <li class="nav-item"><a class="nav-link nav-link border border-danger border-4 border-buttomtext-danger " href="./pajeDesenvolvimento.html">Configurações</a></li>
-          </ul>
 
-        <!-- nav-link border border-danger border-4 border-buttomtext-danger  -->
-          <section>
-          <h4 class="display-4 mt-4">Esta página ainda esta sendo desenvolvida!</h4>
-        <P>Este ambiente foi desenvolvido para proporcionar uma aplicação de avaliações de forma simples, segura e organizada. <a href="./index.html" class="text-danger">Volte para a Home</a></P> 
-        <p class="lead">Desenvolido Por: <strong>Derik Souza Silva - 1º Info.</strong> e <strong>Marcelo Viane Marle - 2º Info.</strong></p>
-        <p class="lead text-danger fw-bold">Qualquer Sujestão ou erro entre em contato! </p>
-    </section>
-    <!-- Footer Fixo com informações -->
-    <footer>
-      <div id="footer">
-        <span id="nomeAluome" class="fw-bold text-primary"></span>
-        <span id="horaAtual" class="text-muted">00:00:00</span>
-        <a href="../../../../index.html" class="btn btn-danger btn-sm">Sair</a>
+    <div class="erro-container">
+      <h1 class="text-danger fw-bold">404</h1>
+      <h3 class="mb-3">Página não encontrada</h3>
+      <p class="text-muted mb-4">Oops! A página que você está procurando ainda esta sendo desenvolvida.</p>
+      <a href="index.html" class="btn btn-outline-danger mb-4">
+        <i class="bi bi-house-door"></i> Voltar para a Home
+      </a>
+
+      <div>
+        <p class="mb-1 fw-bold">Conecte-se conosco:</p>
+        <div class="social-icons">
+          <!-- Redes sociais do Derik -->
+          <a href="https://www.instagram.com/deriksouzafotografia?igsh=MXI3b3BrZWJzNnow" target="_blank" title="Instagram Derik" data-nome="Derik Souza">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://github.com/Derik-2010" target="_blank" title="GitHub Derik" data-nome="Derik Souza">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://wa.me/5533991953724" target="_blank" title="WhatsApp Derik" data-nome="Derik Souza">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+
+          <!-- Redes sociais do Marcelo -->
+          <a href="https://instagram.com/marcelo_henrique_vm" target="_blank" title="Instagram Marcelo" data-nome="Marcelo H. Miranda">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://github.com/MarceloHenriqueVM" target="_blank" title="GitHub Marcelo" data-nome="Marcelo H. Miranda">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://wa.me/55OUTRONUMERO" target="_blank" title="WhatsApp Marcelo" data-nome="Marcelo H. Miranda">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
       </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="Script/informatica.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+      <footer class="mt-5">
+        <p class="text-muted">&copy; 2025 Escola Estadual Clotilde Onofri de Campos</p>
+      </footer>
+    </div>
 
-    <script>
-      // VERDE: Atualiza o relógio no footer em tempo real
-      function atualizarRelogio() {
-        let nome = getElementById('nome').value.trim();
-        const agora = new Date();
-        const hora = agora.toLocaleTimeString();
-        document.getElementById("horaAtual").textContent = hora;
-      }
-      setInterval(atualizarRelogio, 1000);
-      atualizarRelogio();
-
-      // VERDE: Carrega o nome do aluno armazenado no localStorage
-      const nome = getElementById("nome") || "Aluno";
-      document.getElementById("nomeAlunoFooter").textContent = nomeAluno;
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
